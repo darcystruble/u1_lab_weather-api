@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="image">
+        <h1>WEATHER</h1>
+        <div class="info-enter">
+            <input type="text" placeholder="enter your city or zip code" id="inputBar">
+            <button id="button">Get Weather</button>
+        </div>
+    </header>
+
+    <div id="tester" class="flex">
+        <h2 id="city-name"></h2>
+        <!-- Big Section with today's information -->
+        <div class="todays-forcast flex">
+            <div class="picture add-it">
+                <img src="" alt="" id="condition-pic" class="pic-add">
+                <h3>Current Conditions:</h3>
+                <div class="info-box-contain flex">
+                    <div id="current-temp"></div>
+                    <div id="condition"></div>
+                </div>
+            </div>
+            <div class="more-info add-it">
+                <h3>Date:</h3>
+                <div id="todayDate"></div>
+                <h3>Today's High / Low</h3>
+                <div id="high-low"></div>
+                <h3>Chance of Precipitation</h3>
+                <div id="precip"></div>
+                <h3>Feels Like</h3>
+                <div id="feels-like"></div>
+                <h3>Sunrise / Sunset</h3>
+                <div id="sunrise-set"></div>
+            </div>
+        </div>
+        <!-- Future Forecast -->
+        <h3 id="future">Future Forecast</h3>
+        <div class="future-forecast flex">
+            <div id="day-two" class="add-it">
+                <img src="" alt="" id="day-two-pic" class="pic-add">
+                <h3>High / Low</h3>
+                <div id="two-info"></div>
+            </div>
+            <div id="day-three" class="add-it">
+                <img src="" alt="" id="day-three-pic" class="pic-add">
+                <h3>High / Low</h3>
+                <div id="three-info"></div>
+            </div>
+            <div id="other" class="add-it">
+                <h3 id="witchy">Witchy Stuff</h3>
+                <h3>Moon Phase</h3>
+                <div class="moon-phase"></div>
+                <h3>Moon Rise / Moon Set</h3>
+                <div class="moon-rise"></div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>
